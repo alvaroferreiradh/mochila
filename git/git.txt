@@ -1,0 +1,2 @@
+COMANDO DO GIT
+ - git init -> Inicia um repositório
