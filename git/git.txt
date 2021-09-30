@@ -1,2 +1,4 @@
 COMANDO DO GIT
  - git init -> Inicia um repositório
+ - git add . -> Adiciona todos os arquivos no repositório
+ - git commit -m "comentario do commit" -> Faz um commit
