@@ -9,7 +9,8 @@ COMANDO DO GIT
 
 
 PROCESSOS DO DIA A DIA
- - git status
- - git add .
- - git commit -m "descricao do commit"
+ - git status (status do repositorio)
+ - git add . (adiciona/prepara os arquivos)
+ - git commit -m "descricao do commit" (cria um commit)
+ - git push (sobe para o github)
  
