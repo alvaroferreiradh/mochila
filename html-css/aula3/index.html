@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulários</title>
+</head>
+
+<body>
+
+    <main>
+
+        <form>
+            <h1> Insira seus dados para continuar </h1>
+
+            <div class="inline">
+                <div class="campo">
+                    <label> Insira o seu primeiro nome: </label>
+                    <input type="text" name="primeiro-nome" id="primeiro-nome" required>
+                </div>
+
+                <div class="campo">
+                    <label> Insira o seu segundo nome: </label>
+                    <input type="text" name="segundo-nome" id="segundo-nome">
+                </div>
+            </div>
+
+            <div class="campo">
+                <label> Insira o seu email: </label>
+                <input type="email" name="emal" id="email" required>
+            </div>
+
+            <div class="inline">
+                <div class="campo">
+                    <label> Insira o seu celular: </label>
+                    <input type="tel" name="celular" id="celular" required>
+                </div>
+
+                <div class="campo">
+                    <label> Insira o seu telefone: </label>
+                    <input type="tel" name="telefone" id="telefone" required>
+                </div>
+            </div>
+
+
+            <div class="campo">
+                <label> Qual sua stack </label>
+                <select name="stack" id="stack" required>
+                    <option selected disabled value=""> Selecione </option>
+                    <option> Javascript </option>
+                    <option> HTML </option>
+                    <option> CSS </option>
+                    <option> Node </option>
+                </select>
+
+            </div>
+
+
+
+            <input type="submit" name="submit" id="submit">
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>

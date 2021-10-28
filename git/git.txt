@@ -3,3 +3,13 @@ COMANDO DO GIT
  - git add . -> Adiciona todos os arquivos no repositório
  - git commit -m "comentario do commit" -> Faz um commit
  - git checkout -b nomeDaBranch -> Troca de branch e cria, caso não exista.
+ - git merge nomeDabranch -> Junta o branch com a atual.
+ - git remote -> Trata de repositórios em núvem
+ - git push origin main -> Empurrar nossa branch para o Github
+
+
+PROCESSOS DO DIA A DIA
+ - git status
+ - git add .
+ - git commit -m "descricao do commit"
+ 

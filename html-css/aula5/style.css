@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+header {
+    /* Posicionamento */
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+    align-items: center;
+
+    /* Demais estilizações */
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+}
+
+header #header-title {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+header nav .nav-item {
+    color: white;
+    transition: all 1s;
+}
+
+header nav .nav-item:hover {
+    color: gray;
+    transform: scale(1.2);
+}
+
+/*  Animação */
+main #elemeto {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+
+    /* Posicionamento */
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+    /* Definição da Animação */
+    animation-name: animacao-elemento;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes animacao-elemento {
+    0% {
+        background-color: green;
+        left: 0px;
+    }
+    50% {
+        left: 500px;
+        transform: rotate(180deg);
+    }
+    100% {
+        background-color: purple;
+        left: 0px;
+    }
+}
