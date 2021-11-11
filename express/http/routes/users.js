@@ -1,9 +1,13 @@
 var express = require('express');
 var router = express.Router();
-var { getDados, cadastraDados } = require('../controllers/users');
+var { trazerDados, inserirDados, alterarDados, deletarDados } = require('../controllers/users');
 
-router.get('/', getDados);
+router.get('/', trazerDados);
 
-router.get('/cadastrar', cadastraDados);
+router.post('/inserir', inserirDados);
+
+router.put('/alterar/:id', alterarDados);
+
+router.delete('/deletar/:id', deletarDados);
 
 module.exports = router;
