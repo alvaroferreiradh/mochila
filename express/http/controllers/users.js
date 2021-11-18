@@ -38,10 +38,15 @@ function deletarDados(req, res) {
     res.send('Registro deletado!')
 }
 
+function uploadArquivo(req, res) {
+    res.send('Upload realizado com sucesso!')
+}
+
 
 module.exports = {
     trazerDados,
     inserirDados,
     alterarDados,
-    deletarDados
+    deletarDados,
+    uploadArquivo
 }
