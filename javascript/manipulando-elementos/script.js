@@ -9,7 +9,7 @@ elementoLabel.style.color = '#005C78'
 
 const elementoBotao = document.querySelector('#botao-resultado')
 //Captura do evendo de click do botão
-elementoBotao.onclick = function () {
+elementoBotao.ondblclick = function () {
     console.log('Fui clicado!')
 
     const elementoPeso = document.querySelector('#peso')
