@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GitHub User</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2> Identificador de usuários do GitHub </h2>
+
+        <div class="input-container">
+            <input type="text" id="github-username" placeholder="ex: usuarioDoGitHub">
+            <button id="btn-busca"> Buscar Usuário </button>
+        </div>
+
+        <div class="card-usuario">
+            <img src="https://png.pngtree.com/png-vector/20190710/ourlarge/pngtree-user-vector-avatar-png-image_1541962.jpg"
+                id="avatar" alt="Avatar do github do usuário">
+            <h2 id="nome-local"> Álvaro Ferreira, Montes Claros, MG </h2>
+            <p id="bio"> Bio </p>
+            <p id="repositorios"> Repositórios públicos: 20 </p>
+            <p id="seguidores"> Seguidores: 10 </p>
+            <p id="seguindo"> Seguindo: 10 </p>
+            <a id="link-perfil" href="#" target="_blank"> Visitar perfil no GitHub </a>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

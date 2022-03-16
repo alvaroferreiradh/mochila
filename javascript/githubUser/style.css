@@ -1,0 +1,57 @@
+body {
+    background-color: #282a36;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    color: #f8f8f2;
+}
+
+
+input, button, select {
+    width: 100%;
+    padding: 10px;
+    background-color: #44475a;
+    border: 1px solid #44475a;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+select {
+    width: 400px;
+}
+
+button {
+    background-color: #ff5555;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.container {
+    width: 380px;
+    border: 1px #44475a solid;
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+.input-container {
+    display: flex;
+    gap: 10px;
+}
+
+
+.card-usuario {
+    display: none;
+}
