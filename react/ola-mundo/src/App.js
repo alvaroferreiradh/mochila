@@ -3,7 +3,6 @@ import ListaCliente from './pages/ListaCliente'
 
 function App() {
 
-
   return (
     <div className="App">
       <ListaCliente />

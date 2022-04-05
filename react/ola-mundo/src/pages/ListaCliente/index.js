@@ -8,15 +8,17 @@ function ListaCliente() {
 
     //Tudo dentro deste método será executado quando o componente for renderizado em tela.
     useEffect(() => {
+
         buscarClientesDoServidor()
         console.log('Entou dentro do useEffect')
+        
     }, [])
 
 
     async function buscarClientesDoServidor() {
         //requisição para o servidor que irá retornar uma lista de clientes
         const retornoDaApi = await axios.get('https://reqres.in/api/users')
-        console.log(retornoDaApi.data.data)
+        
         setListaClientes(retornoDaApi.data.data)
     }
 
