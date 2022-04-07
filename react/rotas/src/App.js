@@ -1,8 +1,9 @@
-import Componente1 from './components/Componente1'
-import Compoenete2 from './components/Componente2'
 import { createContext, useState } from 'react'
+import Routes from './Routes';
+import Header from './components/Header'
 
 export const UsuarioContext = createContext()
+export const TemaContext = createContext()
 
 function App() {
   const [usuario, setUsuario] = useState({
@@ -12,16 +13,15 @@ function App() {
     email: 'alvaro@dh.com'
   });
 
+  const [tema, setTema] = useState('claro')
+
   return (
     <UsuarioContext.Provider value={[usuario, setUsuario]}>
+      <TemaContext.Provider value={[tema, setTema]}>
 
-      <Componente1 nome="Roberto" />
-
-      <hr />
-
-      <Compoenete2 endereco="Rua Juca Marcedo, 820" />
-     
-     
+        <Routes />
+      
+      </TemaContext.Provider>
     </UsuarioContext.Provider>
   );
 }

@@ -1,10 +1,11 @@
 import './style.css'
 import { useContext } from 'react'
-import { UsuarioContext } from '../../App'
+import { UsuarioContext, TemaContext } from '../../App'
 
 
 function Componente2({ endereco }) {
   const [usuario, setUsuario] = useContext(UsuarioContext)
+  const [tema, setTema] = useContext(TemaContext)
 
   function mudaUsuario() {
     setUsuario({
@@ -13,11 +14,14 @@ function Componente2({ endereco }) {
       telefone: '1351351351',
       email: 'pedro@dh.com'
     })
+
+    setTema('escuro')
   }
 
     return (
       <div>
-        <h1> Este h1 está no meu Componente2 {usuario.telefone} </h1>
+        <h1> Telefone do usuario: {usuario.telefone} </h1>
+        <h1> Tema da aplicação: {tema} </h1>
 
         <button onClick={mudaUsuario}> Mudar de usuario </button>
        
